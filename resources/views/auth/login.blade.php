@@ -54,7 +54,7 @@
                                 <button type="submit" class="btn btn-primary">
                                     Login
                                 </button>
-                                <a href="{{ route('password.request') }}" class="btn btn-link">
+                                <a href="{{ route('entermobile') }}" class="btn btn-link">
                                 {{ __('Forgot Your Password?') }}</a>
                             </div>
                         </div>

@@ -29,6 +29,9 @@ Route::get('admin-password/reset','Admin\ForgotPasswordController@showLinkReques
 Route::post('admin-password/reset','Admin\ResetPasswordController@reset');
 Route::get('admin-password/reset/{token}','Admin\ResetPasswordController@showResetForm')->name('admin.password.reset');
 
+Route::get('entermobile','ForgotController@showResend')->name('entermobile');
+Route::post('resendotp','ForgotController@create')->name('resendotp');
+
 Route::get('admin/adminpdfGet','Admin\AdminPdfController@pdfGet')->name('adminPdfGet');
 Route::get('admin/adminpdfDownload','Admin\AdminPdfController@index')->name('adminpdfdownload');
 
